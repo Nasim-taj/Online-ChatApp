@@ -1,0 +1,2 @@
+mongodb_password=tupz1OCZwOKTek1E
+MONGODB_URI=mongodb+srv://ntgaming02001:tupz1OCZwOKTek1E@cluster0.o9ozdkq.mongodb.net/my-chatapp?retryWrites=true&w=majority&appName=Cluster0

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar Styling - Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cbd5e1; /* light gray-blue (can be changed) */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e293b; /* dark slate color */
+  border-radius: 8px;
+  border: 2px solid #cbd5e1; /* match track for smooth thumb */
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1e293b #cbd5e1;
+}
+
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.scroll-hidden {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
